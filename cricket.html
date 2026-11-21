@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cricket</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--live:#3ddc84;--score:#4fc3f7}
+html{height:100%;background:#000}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#000;color:#fff;font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;line-height:1.45;min-height:100%}
+main{max-width:620px;margin:0 auto;padding:24px 16px 48px}
+.back{color:#fff;font-size:.85rem;text-decoration:none;opacity:.85;display:inline-block;margin-bottom:14px}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:26px}
+h1{font-size:1.6rem;margin:0 0 4px;letter-spacing:-.01em;font-weight:600}
+.sub{margin:0;font-size:.95rem}
+.logo{flex:none;width:58px;height:58px;border-radius:16px;background:rgba(255,255,255,.08);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center}
+.btn{display:flex;align-items:center;justify-content:space-between;gap:14px;text-decoration:none;color:#fff;background:rgba(255,255,255,.08);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.22);border-left:6px solid var(--c);border-radius:10px;box-shadow:0 8px 28px rgba(0,0,0,.5);padding:22px 20px;margin-bottom:14px}
+.btn:active{background:rgba(255,255,255,.16)}
+.btn:focus-visible{outline:3px solid var(--c);outline-offset:2px}
+.btn b{display:block;font-size:1.4rem;font-weight:600;color:var(--c)}
+.btn span{display:block;font-size:.85rem;margin-top:2px}
+.btn svg{flex:none}
+</style>
+</head>
+<body>
+<main>
+  <a class="back" href="index.html">&larr; Gas Cost Calculator</a>
+  <div class="top">
+    <div><h1>Cricket</h1><p class="sub">Watch &amp; follow</p></div>
+    <div class="logo" role="img" aria-label="Cricket ball">
+      <svg viewBox="0 0 64 64" width="34" height="34" aria-hidden="true" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><circle cx="32" cy="32" r="22" fill="rgba(228,0,43,.35)"/><path d="M18 16c8 8 8 24 0 32M46 16c-8 8-8 24 0 32"/></svg>
+    </div>
+  </div>
+
+  <a class="btn" style="--c:var(--live)" href="https://new.touchcric.com/" target="_blank" rel="noopener">
+    <div><b>Live Cricket</b><span>Watch live matches</span></div>
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#3ddc84" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M10 8.5l6 3.5-6 3.5z" fill="#3ddc84"/></svg>
+  </a>
+
+  <a class="btn" style="--c:var(--score)" href="https://www.cricbuzz.com" target="_blank" rel="noopener">
+    <div><b>Live Score</b><span>Scores &amp; scorecards</span></div>
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="#4fc3f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+  </a>
+</main>
+</body>
+</html>
